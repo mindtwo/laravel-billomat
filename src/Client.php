@@ -63,7 +63,7 @@ class Client extends \GuzzleHttp\Client
 
         return $this->request(
             $this->resource->getType(),
-            $this->resource->getUri(),
+            $this->resource->getUri() . '?api_key=' . Config::get('billomat.api_key'),
             [
                 'headers' => $this->getBillomatHeaders(),
             ]
