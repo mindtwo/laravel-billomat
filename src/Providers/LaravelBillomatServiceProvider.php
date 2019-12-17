@@ -12,7 +12,7 @@ class LaravelBillomatServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../Config/ServiceDescription.php' => config_path('billomat-service-description.php'),
+            //__DIR__.'/../Config/ServiceDescription.php' => config_path('billomat-service-description.php'),
             __DIR__.'/../Config/Config.php' => config_path('billomat.php'),
         ]);
     }
