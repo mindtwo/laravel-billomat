@@ -10,6 +10,9 @@
          processIsolation="false"
          stopOnFailure="true">
     <testsuites>
+        <testsuite name="Feature Test Suite">
+            <directory>./tests/Feature/</directory>
+        </testsuite>
         <testsuite name="Unit Test Suite">
             <directory>./tests/Unit/</directory>
         </testsuite>
